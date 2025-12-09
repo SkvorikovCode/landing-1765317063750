@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initialize any additional components if needed
+    // Add hover effects to buttons with icons
+    document.querySelectorAll('.btn-with-icon').forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+        });
+
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
     console.log('Torexxx Creator landing page initialized');
 });
